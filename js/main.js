@@ -36,4 +36,36 @@ $(function() {
     toggleChangeBtn();
   });
 
+  //topへ戻るボタン
+  $('#back-to-top').hide();
+  //スクロールが十分されたら表示、スクロールが戻ったら非表示
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 80) {
+      $('#back-to-top').fadeIn();
+    } else {
+      $('#back-to-top').fadeOut();
+    }
+  });
+  //クリック時topへ戻る
+  $('#back-to-top a').click(function() {
+    $('body').animate({
+      scrollTop:100
+    }, 500);
+    return false;
+
+  });
+
+  //introductionへ遷移
+  //introducitonの位置を取得
+  var introductionLine = document.getElementById("introduction");
+  //取得した位置へ遷移
+  $('#introduction-header').click(function(){
+    console.log(introductionLine);
+    $('body').animate({
+      scrollTop:introductionLine
+    }, 500);
+    return false;
+  });
+
+
 });

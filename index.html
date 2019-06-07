@@ -11,9 +11,9 @@
     <header>
       <div class="header-right">
         <ul>
-          <li><a href="#"><i class="fas fa-user-edit"></i> Introduction</a></li>
-          <li><a href="#"><i class="fas fa-desktop"></i> Products</a></li>
-          <li><a href="#"><i class="far fa-envelope"></i> Contact</a></li>
+          <li><a id="introduction-header" href="#"><i class="fas fa-user-edit"></i> Introduction</a></li>
+          <li><a id="products-header" href="#"><i class="fas fa-desktop"></i> Products</a></li>
+          <li><a id="contact-header" href="#"><i class="far fa-envelope"></i> Contact</a></li>
         </ul>
       </div>
     </header>
@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-    <div class="introduction">
+    <div class="introduction" id="introduction">
       <h1><i class="fas fa-user-edit"></i> Introduction</h1>
       <div class="container">
         <div class="introduction_content">
@@ -37,12 +37,12 @@
         </div>
       </div>
     </div>
-    <div class="products">
+    <div class="products" id="products">
       <h1><i class="fas fa-desktop"></i> Products</h1>
       <div class="container">
         <div class="change-btn-wrapper">
-          <div class="change-btn prev-btn">prev</div>
-          <div class="change-btn next-btn">next</div>
+          <a class="change-btn prev-btn" href="#">prev</a>
+          <a class="change-btn next-btn" href="#">next</a>
         </div>
         <ul class="slides">
           <li class="slide active">
@@ -67,14 +67,14 @@
           </li>
         </ul>
         <div class="index-btn-wrapper">
-          <div class="index-btn">1</div>
-          <div class="index-btn">2</div>
-          <div class="index-btn">3</div>
-          <div class="index-btn">4</div>
+          <div class="index-btn">sample1</div>
+          <div class="index-btn">sample2</div>
+          <div class="index-btn">sample3</div>
+          <div class="index-btn">sample4</div>
         </div>
       </div>
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
       <h1><i class="far fa-envelope"></i> Contact</h1>
       <div class="container">
         <form>
@@ -106,6 +106,7 @@
 
       </div>
     </div>
+    <a id="back-to-top" href="#"><i class="far fa-arrow-alt-circle-up"></a>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

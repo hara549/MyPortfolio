@@ -54,9 +54,6 @@ header li {
   margin: 10px 20px;
   list-style: none;
 }
-/* header li:hover {
-  font-size: 20px;
-} */
 
 /* top */
 .top {
@@ -70,9 +67,10 @@ header li {
 }
 .top-title {
   position: absolute;
-  top: 230px;
+  top: 250px;
   font-weight: bold;
   text-align: center;
+  text-shadow: 4px 4px 5px #dcdcdc;
 }
 .top-title h1 {
   font-size: 55px;
@@ -104,8 +102,6 @@ header li {
   display: block;
 }
 .index-btn-wrapper {
-  font-size: 16px;
-  /* width: 600px; */
   margin: 20px auto;
   text-align: center;
 }
@@ -114,7 +110,8 @@ header li {
   background: #3cb371;
   border: none;
   color: white;
-  width: 20px;
+  width: 60px;
+  height: 50px;
   font-size:17px;
   font-weight:bold;
   padding: 10px 20px;
@@ -123,7 +120,7 @@ header li {
   text-align: center;
 }
 .change-btn-wrapper {
-  width: 600px;
+  width: 800px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
@@ -137,7 +134,7 @@ header li {
   float: right;
 }
 .slides {
-  width: 600px;
+  width: 800px;
   height: 400px;
   border-radius: 5px;
   background-color: white;
@@ -206,4 +203,13 @@ input[type="reset"]{
 form h2 {
   color: red;
   font-size: 15px;
+}
+
+/* other */
+#back-to-top {
+  font-size: 40px;
+  color: #3cb371;
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
 }
