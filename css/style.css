@@ -7,11 +7,33 @@ body {
   font-family: serif;
   background-color: rgba(152, 251, 152, 0.1);
 }
+/* a {
+  text-decoration: none;
+  color: black;
+} */
 a {
+  position: relative;
   text-decoration: none;
   color: black;
 }
-
+a:hover {
+  color: #3cb371;
+}
+a::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #3cb371;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform .3s;
+}
+a:hover::after {
+  transform: scale(1, 1);
+}
 /* header */
 header {
   width: 100%;
@@ -32,9 +54,9 @@ header li {
   margin: 10px 20px;
   list-style: none;
 }
-header li:hover {
+/* header li:hover {
   font-size: 20px;
-}
+} */
 
 /* top */
 .top {
@@ -68,7 +90,7 @@ header li:hover {
   margin: 0 auto;
 }
 .introduction_content {
-  background-color: #f5f5f5;
+  background-color: white;
 }
 
 /* products */
@@ -118,7 +140,7 @@ header li:hover {
   width: 600px;
   height: 400px;
   border-radius: 5px;
-  background-color: #f5f5f5;
+  background-color: white;
   text-align: center;
   margin: 0 auto;
   padding: 0;
