@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-right">
+        <ul>
+          <li><a href="#">Introduction</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="top">
+      <div class="container">
+        <div class="top-title">
+          <h1>Yohei Harata</h1>
+          <h2>My Portfolio</h2>
+        </div>
+      </div>
+    </div>
+    <div class="introduction">
+      <h1>Introduction</h1>
+      <div class="container">
+        <div class="introduction_content">
+          <p>自己紹介を入れる</p>
+          <p>----------------------------------</p>
+          <p>----------------------------------</p>
+          <p>----------------------------------</p>
+          <p>----------------------------------</p>
+        </div>
+      </div>
+    </div>
+    <div class="products">
+      <h1>Products</h1>
+      <div class="container">
+        <div class="change-btn-wrapper">
+          <div class="change-btn prev-btn">prev</div>
+          <div class="change-btn next-btn">next</div>
+        </div>
+        <ul class="slides">
+          <li class="slide active">
+            <div>
+              sample1
+            </div>
+          </li>
+          <li class="slide">
+            <div>
+              sample2
+            </div>
+          </li>
+          <li class="slide">
+            <div>
+              sample3
+            </div>
+          </li>
+          <li class="slide">
+            <div>
+              sample4
+            </div>
+          </li>
+        </ul>
+        <div class="index-btn-wrapper">
+          <div class="index-btn">1</div>
+          <div class="index-btn">2</div>
+          <div class="index-btn">3</div>
+          <div class="index-btn">4</div>
+        </div>
+      </div>
+    </div>
+    <div class="contact">
+      <h1>Contact</h1>
+      <div class="container">
+        <form>
+          <div class="item">
+            <label class="label">お名前</label>
+            <input class="inputs" type="text" name="name" placeholder="名前を入力してください">
+          </div>
+          <div class="item">
+            <label class="label">メールアドレス</label>
+            <input class="inputs" type="email" name="email" placeholder="メールアドレスを入力してください">
+          </div>
+          <div class="item">
+            <p class="label">お問い合わせ種別</p>
+            <div class="inputs">
+            <input id="kindA" type="radio" name="kind" value="kindA"><label for="kindA">種別A</label>
+            <input id="kindB" type="radio" name="kind" value="kindB"><label for="kindB">種別B</label>
+            <input id="kindC" type="radio" name="kind" value="kindC"><label for="kindC">種別C</label>
+            </div>
+          </div>
+          <div class="item">
+            <label class="label">お問い合わせ内容</label>
+            <textarea class="inputs" placeholder="お問い合わせ内容を入力してください。"></textarea>
+          </div>
+          <div class="btn-area">
+            <input type="submit" value="送信"><input type="reset" value="リセット">
+          </div>
+          <h2>※現在お問い合わせフォームはご利用いただけません</h2>
+        </form>
+
+      </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
