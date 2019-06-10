@@ -50,7 +50,7 @@ $(function() {
   $('#back-to-top a').click(function() {
     $('body').animate({
       scrollTop:100
-    }, 500);
+    }, 800);
     return false;
 
   });
