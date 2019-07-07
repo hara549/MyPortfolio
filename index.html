@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>MyPortfolio</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="slick/slick-theme.css"type="text/css">
+    <link rel="stylesheet" href="slick/slick.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
@@ -18,29 +19,44 @@
       </div>
     </header>
     <div class="top">
-      <div class="container">
-        <div class="top-title">
-          <h1>Yohei Harata</h1>
-          <h2>My Portfolio</h2>
-        </div>
+      <div class="top-title">
+        <h1>Yohei Harata</h1>
+        <h2>My Portfolio</h2>
       </div>
     </div>
-    <div class="introduction" id="introduction">
-      <h1><i class="fas fa-user-edit"></i> Introduction</h1>
-      <div class="container">
+    <div class="container">
+      <div class="introduction" id="introduction">
+        <h1><i class="fas fa-user-edit"></i> Introduction</h1>
         <div class="introduction_content">
-          <p>自己紹介を入れる</p>
-          <p>----------------------------------</p>
-          <p>----------------------------------</p>
-          <p>----------------------------------</p>
-          <p>----------------------------------</p>
+          <img id="photo" src="img/profile.jpg">
+          <div id="content">
+            <p>
+              はじめまして。1991年生まれ原田陽平と申します</br>
+              新卒でSE会社へ入社し、1年目はC#でオンラインシステムの開発、2年目以降約4年間に渡ってCOBOLで自治体向け税パッケージの保守を担当。設計からテストまで一貫して行なっておりました。</br>
+              自身の更なる成長を目指し、転職を決意。現在HTML/CSS/JavaScript/Jquery/PHPを中心に日々自己学習を進めています。
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="products" id="products">
-      <h1><i class="fas fa-desktop"></i> Products</h1>
-      <div class="container">
-        <div class="change-btn-wrapper">
+      <div class="products" id="products">
+        <h1><i class="fas fa-desktop"></i> Products</h1>
+        <ul class="slider-for">
+          <li>
+            <img src="img/MyPortfolio_slider.png">
+          </li>
+          <li>
+            <img src="img/HealthNAVI_slider.png">
+          </li>
+        </ul>
+        <ul class="slider-nav">
+          <li>
+            <img src="img/MyPortfolio_thumb.png">
+          </li>
+          <li>
+            <img src="img/HealthNAVI_thumb.png">
+          </li>
+        </ul>
+        <!-- <div class="change-btn-wrapper">
           <a class="change-btn prev-btn">prev</a>
           <a class="change-btn next-btn">next</a>
         </div>
@@ -72,11 +88,9 @@
           <div class="index-btn">sample3</div>
           <div class="index-btn">sample4</div>
         </div>
-      </div>
-    </div>
-    <div class="contact" id="contact">
-      <h1><i class="far fa-envelope"></i> Contact</h1>
-      <div class="container">
+      </div> -->
+      <div class="contact" id="contact">
+        <h1><i class="far fa-envelope"></i> Contact</h1>
         <form>
           <div class="item">
             <label class="label">お名前</label>
@@ -103,10 +117,11 @@
           </div>
           <h2>※現在お問い合わせフォームはご利用いただけません</h2>
         </form>
-
       </div>
+      <!-- <a id="back-to-top" href="#"><i class="far fa-arrow-alt-circle-up"></a> -->
     </div>
-    <a id="back-to-top" href="#"><i class="far fa-arrow-alt-circle-up"></a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

@@ -1,4 +1,40 @@
 $(function() {
+  //slicker
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true,
+    responsive:[
+        {
+            breakpoint: 1024,
+            settings:{
+                slidesToShow:3,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings:{
+                slidesToShow:2,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings:{
+                slidesToShow:1,
+            }
+        },
+    ]
+  });
 
   //prevボタン、nextボタンの表示非表示
   function toggleChangeBtn() {
