@@ -1,142 +1,89 @@
 <!DOCTYPE html>
-<html lang="ja" dir="ltr">
+<html lang="ja">
   <head>
     <meta charset="utf-8">
     <title>MyPortfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="slick/slick-theme.css"type="text/css">
-    <link rel="stylesheet" href="slick/slick.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+    <link rel="stylesheet" href="./slick/slick-theme.css"type="text/css">
+    <link rel="stylesheet" href="./slick/slick.css" type="text/css">
+</head>
   <body>
-    <header>
-      <div class="header-right">
-        <ul>
-          <li><a id="introduction-header"><i class="fas fa-user-edit"></i> プロフィール</a></li>
-          <li><a id="products-header"><i class="fas fa-desktop"></i> 制作実績</a></li>
-          <li><a id="contact-header"><i class="far fa-envelope"></i> お問い合わせ</a></li>
-        </ul>
-      </div>
-    </header>
-    <div class="top">
-      <div class="container">
-        <div class="top-title">
-          <h1>Yohei Harata</h1>
-          <h2>My Portfolio</h2>
-        </div>
+    <div id="header">
+      <ul>
+        <li class="header_right">自己紹介</li>
+        <li class="header_right">制作実績</li>
+        <li class="header_right">お問い合わせ</li>
+      </ul>
+    </div>
+    <div id="top">
+      <div class="bg"></div>
+      <div class="bg bg2"></div>
+      <div class="bg bg3"></div>
+      <div id="title">
+        <h1>Yohei Harata</h1>
+        <h2>My Portfolio</h2>
       </div>
     </div>
-    <div class="introduction">
-      <div class="container">
-        <h1><i class="fas fa-user-edit"></i> プロフィール</h1>
-        <div class="introduction_content">
-          <img id="photo" src="img/profile.jpg">
-          <div id="content">
-            <p>
-              はじめまして。1991年生まれ原田陽平と申します。</br>
-              新卒でSE会社へ入社し、1年目はC#でオンラインシステムの開発、2年目以降約4年間に渡ってCOBOLで自治体向けパッケージの保守を担当。設計からテストまで一貫して行なっておりました。</br>
-              自身の更なる成長を目指し、現在HTML/CSS/JavaScript/jQuery/PHPを中心に自己学習を進めています。</br></br>
+    <div id="introduction">
+      <h1>自己紹介</h1>
+      <img id="profile" src="./img/profile.jpg">
+      <p id="text">
+        はじめまして。1991年生まれ原田陽平と申します。</br>
+        新卒でSE会社へ入社し、1年目はC#でオンラインシステムの開発、2年目以降約4年間に渡ってCOBOLで自治体向けパッケージの保守を担当。設計からテストまで一貫して行なっておりました。</br>
+        自身の更なる成長を目指し、現在HTML/CSS/JavaScript/jQuery/PHPを中心に自己学習を進めています。</br></br>
 
-              <i class="fab fa-github" style="font-size: 22px;"></i><a href="https://github.com/hara549"> https://github.com/hara549</a>
-            </p>
-          </div>
-        </div>
-      </div>
+        <i class="fab fa-github" style="font-size: 22px;"></i><a href="https://github.com/hara549"> https://github.com/hara549</a>
+      </p>
     </div>
-    <div class="products">
-      <div class="container">
-        <h1 style="color: #273849;"><i class="fas fa-desktop"></i> 制作実績<span style="font-size: 19px; color: rgba(230, 41, 8, 0.78);">　※ 随時更新中</span></h1>
-        <ul class="slider-for">
-          <li>
-            <div class="slider_main">
-              <img src="img/MyPortfolio_slider.png">
-              <p>
-                当ポートフォリオサイトです</br></br>
-
-                使用技術：HTML/CSS/jQuery</br></br>
-
-                <i class="fab fa-github" style="font-size: 22px;"></i><a href="https://github.com/hara549/MyPortfolio"> https://github.com/hara549/MyPortfolio</a></br>
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="slider_main">
-              <img src="img/HealthNAVI_slider.png">
-              <p>
-                「病院を探したいけどどの診療科に行けばいいか分からない」</br>
-                そんな時に利用するWEBサービスです。</br>
-                症状または病名で診療科を検索し、</br>
-                指定した診療科・住所を元に周辺の病院を検索します。</br></br>
-
-                使用技術：HTML/CSS/jQuery/GoogleMapAPI</br></br>
-
-                <i class="fab fa-github" style="font-size: 22px;"></i><a href="https://github.com/hara549/Health-NAVI"> https://github.com/hara549/Health-NAVI</a></br>
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="slider_main">
-              <img src="img/ECsite_slider.png">
-              <p>
-                練習用に作成したショッピングサイトです。</br>
-                ショッピングカートへの追加、削除機能を実装しています。</br>
-
-                使用技術：HTML/CSS/PHP/MySQL</br></br>
-
-                <i class="fab fa-github" style="font-size: 22px;"></i><a href="https://github.com/hara549/ECsite"> https://github.com/hara549/ECsite</a></br>
-              </p>
-            </div>
-
-          </li>
+    <div id="products">
+      <h1>制作実績</h1>
+      <div id="wrap">
+        <ul id="slider">
+          <li class="slide-item"><img data-lazy="./img/HealthNAVI_slide.png" alt="画像"></li>
+          <li class="slide-item"><img data-lazy="./img/HouseHold_slide.png" alt="画像"></li>
+          <li class="slide-item"><img data-lazy="./img/ClickQuest_slide.png" alt="画像"></li>
+          <li class="slide-item"><img data-lazy="./img/ECsite_slide.png" alt="画像"></li>
+          <li class="slide-item"><img data-lazy="./img/MyPortfolio_slide.png" alt="画像"></li>
         </ul>
-        <ul class="slider-nav">
-          <li>
-            <img src="img/MyPortfolio_thumb.png">
-          </li>
-          <li>
-            <img src="img/HealthNAVI_thumb.png">
-          </li>
-          <li>
-            <img src="img/ECsite_thumb.png">
-          </li>
+        <ul id="thumbnail_slider">
+          <li class="thumbnail-item"><img data-lazy="./img/HealthNAVI_slide.png" alt="画像"></li>
+          <li class="thumbnail-item"><img data-lazy="./img/HouseHold_slide.png" alt="画像"></li>
+          <li class="thumbnail-item"><img data-lazy="./img/ClickQuest_slide.png" alt="画像"></li>
+          <li class="thumbnail-item"><img data-lazy="./img/ECsite_slide.png" alt="画像"></li>
+          <li class="thumbnail-item"><img data-lazy="./img/MyPortfolio_slide.png" alt="画像"></li>
         </ul>
       </div>
     </div>
-    <div class="contact">
-      <div class="container">
-        <h1><i class="far fa-envelope"></i> お問い合わせ</h1>
-        <form>
-          <div class="item">
-            <label class="label">お名前</label>
-            <input class="inputs" type="text" name="name" placeholder="名前を入力してください">
-          </div>
-          <div class="item">
-            <label class="label">メールアドレス</label>
-            <input class="inputs" type="email" name="email" placeholder="メールアドレスを入力してください">
-          </div>
-          <div class="item">
-            <p class="label">お問い合わせ種別</p>
-            <div class="inputs">
-            <input id="kindA" type="radio" name="kind" value="kindA"><label for="kindA">種別A</label>
-            <input id="kindB" type="radio" name="kind" value="kindB"><label for="kindB">種別B</label>
-            <input id="kindC" type="radio" name="kind" value="kindC"><label for="kindC">種別C</label>
-            </div>
-          </div>
-          <div class="item">
-            <label class="label">お問い合わせ内容</label>
-            <textarea class="inputs" placeholder="お問い合わせ内容を入力してください。"></textarea>
-          </div>
-          <div class="btn-area">
-            <input class="submit" type="submit" value="送信"><input class="reset" type="reset" value="リセット">
-          </div>
-          <h2>※現在お問い合わせフォームはご利用いただけません</h2>
-        </form>
+    <div id="contact">
+      <h1>お問い合わせ</h1>
+      <table align="center">
+        <tr>
+          <td class="label">お名前</td>
+          <td><input class="inputs" type="text" name="name" placeholder="名前を入力してください" autocomplete="off"></td>
+        </tr>
+        <tr>
+          <td class="label">メールアドレス</td>
+          <td><input class="inputs" type="email" name="email" placeholder="メールアドレスを入力してください" autocomplete="off"></td>
+        </tr>
+        <tr>
+          <td class="label">電話番号</td>
+          <td><input class="inputs" type="tel" name="tel" placeholder="電話番号を入力してください" autocomplete="off"></td>
+        </tr>
+        <tr>
+          <td class="label">お問い合わせ内容</td>
+          <td><textarea class="inputs" placeholder="お問い合わせ内容を入力してください。" autocomplete="off"></textarea></td>
+        </tr>
+      </table>
+      <div class="btn-area">
+        <input class="submit" type="submit" value="送信"><input class="reset" type="reset" value="リセット">
+        <h2>※現在お問い合わせフォームはご利用いただけません</h2>
       </div>
-      <i class="fas fa-caret-square-up" id="back-to-top"></i>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
   </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="./slick/slick.min.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+
 </html>
